@@ -1,0 +1,10 @@
+.DS_Store
+*.dts
+*.dtb
+kernel/KERNEL
+kernel/initramfs
+system/SYSTEM
+system/rootfs
+*.img
+*.zip
+*.gz
