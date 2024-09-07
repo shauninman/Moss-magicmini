@@ -17,7 +17,7 @@ DISK_SIZE=$(( ${DISK_START_PADDING} + ${SYSTEM_SIZE} + ${DISK_GPT_PADDING} ))
 
 DISK_BASENAME="${HERE}/${IMAGE_NAME}"
 DISK="${DISK_BASENAME}.img"
-rm "$DISK"
+rm "$DISK" "$DISK.zip"
 
 LE_TMP=$(mktemp -d)
 
