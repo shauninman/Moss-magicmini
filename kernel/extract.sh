@@ -3,7 +3,7 @@ set -x
 
 HERE="$(pwd)"
 
-dd if=KERNEL of=/tmp/initramfs.cpio.gz bs=128 skip=100597
+dd if=KERNEL of=/tmp/initramfs.cpio.gz skip=12876416 iflag=skip_bytes bs=1M
 cd /tmp
 gunzip -c initramfs.cpio.gz > initramfs.cpio
 cpio -it < initramfs.cpio > initramfs-list.txt
